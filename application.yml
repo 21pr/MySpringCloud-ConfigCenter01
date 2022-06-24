@@ -1,0 +1,17 @@
+#指定使用哪个环境
+spring: 
+  profiles: 
+    active: dev
+---
+#声明是开发环境
+spring: 
+  config: 
+    active: 
+      on-profile: dev
+---
+#声明是生产环境
+spring: 
+  config: 
+    active: 
+      on-profile: prod
+#以UTF-8格式保存文件
